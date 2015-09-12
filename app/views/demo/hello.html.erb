@@ -1,0 +1,14 @@
+<h1>Demo Controller, Hello Page</h1>
+
+<% @array.each do |n| %>
+<%= n %> <br />
+<% end %>
+
+<a href="/demo/index">Index Page 1</a><br />
+<%= link_to('Index page 2', {:action => 'index'}) %>
+
+<br />
+
+ID: <%= params[:id] %>
+ID: <%= @id %><br />
+Page: <%= @page %>
