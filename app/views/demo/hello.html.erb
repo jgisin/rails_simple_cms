@@ -9,6 +9,10 @@
 
 <br />
 
-ID: <%= params[:id] %>
+ID: <%= params[:id] %><br />
 ID: <%= @id %><br />
-Page: <%= @page %>
+Next Page: <%= @page.to_i + 1 %>
+
+<hr />
+
+<%= params.inspect %>
