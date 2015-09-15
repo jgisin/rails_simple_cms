@@ -1,4 +1,7 @@
 class SectionsController < ApplicationController
+  
+layout "admin"
+
   def delete
     @section = Section.find(params[:id])
   end

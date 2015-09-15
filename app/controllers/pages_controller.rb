@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  
+  layout "admin"
+
   def delete
     @page = Page.find(params[:id])
   end
