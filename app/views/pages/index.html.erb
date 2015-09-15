@@ -16,6 +16,8 @@
 			<th>Pages</th>
 			<th>Visible</th>
 			<th>Editors</th>
+			<th>Subject ID</th>
+			<th>Sections</th>
 			<th>Actions</th>
 		</tr>
 		<% @pages.each do |page| %>
@@ -24,6 +26,8 @@
 			<td><%= page.name %></td>
 			<td class="center"><%= page.visible ? 'Yes' : 'No' %></td>
 			<td class="center"><%= page.editors.size %></td>
+			<td class="center"><%= page.subject_id %></td>
+			<td class="center"><%= page.sections.size %></td>
 			<td class="actions">
 				<%= link_to("Show", {:action => 'show', :id => page.id}, :class => 'action show') %>
 				<%= link_to("Edit", {:action => 'edit', :id => page.id}, :class => 'action edit') %>

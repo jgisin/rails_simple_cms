@@ -47,7 +47,7 @@ class SectionsController < ApplicationController
 
   private
   def section_params
-    params.require(:section).permit(:name, :position, :content_type,
+    params.require(:section).permit(:page_id, :name, :position, :content_type,
      :content, :visible)
   end
 

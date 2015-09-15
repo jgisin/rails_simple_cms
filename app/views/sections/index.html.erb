@@ -6,7 +6,7 @@
 
 
 <div class="sections index">
-	<h2>Pages</h2>
+	<h2>Sections</h2>
 
 	<%= link_to("Add New Sections", {:action => 'new'}, :class => 'action new') %>
 
@@ -16,6 +16,7 @@
 			<th>Sections</th>
 			<th>Content</th>
 			<th>Content Type</th>
+			<th>Page ID</th>
 			<th>Visible</th>
 			<th>Actions</th>
 		</tr>
@@ -25,6 +26,7 @@
 			<td><%= section.name %></td>
 			<td class="center"><%= section.content %></td>
 			<td class="center"><%= section.content_type %></td>
+			<td class="center"><%= section.page_id %></td>
 			<td class="center"><%= section.visible %></td>
 			<td class="actions">
 				<%= link_to("Show", {:action => 'show', :id => section.id}, :class => 'action show') %>
