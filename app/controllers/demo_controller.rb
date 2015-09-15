@@ -1,6 +1,6 @@
 class DemoController < ApplicationController
 	
-	layout false
+	layout "admin"
 
 	def index
 		
@@ -20,6 +20,9 @@ class DemoController < ApplicationController
 
 	def demo_text
 		render(:text => "This is text rendered through an action")
+	end
+
+	def text_helpers
 	end
 
 end

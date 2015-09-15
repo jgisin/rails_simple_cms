@@ -1,7 +1,12 @@
-<h1>Simple CMS</h1>
+<% @page_title = "CMS - Menu" %>
 <h2>Temp Menu</h2>
+<ul>
 
-<%= link_to('Subject Index', {:controller => 'subjects', :action => 'index'}) %><br />
-<%= link_to('Page Index', {:controller => 'pages', :action => 'index'}) %><br />
-<%= link_to('Section Index', {:controller => 'sections', :action => 'index'}) %><br />
-
+<li><%= link_to('Subject Index', {:controller => 'subjects', :action => 'index'}) %></li>
+<hr />
+<li><%= link_to('Page Index', {:controller => 'pages', :action => 'index'}) %><br /></li>
+<hr />
+<li><%= link_to('Section Index', {:controller => 'sections', :action => 'index'}) %></li>
+<hr />
+<li><%= link_to('Text Helpers', {:action => 'text_helpers'}) %></li>
+<hr />
