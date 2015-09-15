@@ -1,15 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'pages/delete'
-
-  get 'pages/edit'
-
-  get 'pages/index'
-
-  get 'pages/new'
-
-  get 'pages/show'
-
   root 'demo#index'
   match ':controller(/:action(/:id))', :via => [:get, :post]
 

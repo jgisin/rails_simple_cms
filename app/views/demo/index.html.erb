@@ -1,6 +1,7 @@
-<h1>Welcome to my page!</h1>
-<h2>Content Below:</h2>
+<h1>Simple CMS</h1>
+<h2>Temp Menu</h2>
 
-<a href="/demo/hello">Hello Page 1</a><br />
-<%= link_to('Hello page 2', {:action => 'hello'}) %><br />
-<%= link_to('Hello with parameters', {:action => 'hello', :page => 5, :id => 20}) %>
+<%= link_to('Subject Index', {:controller => 'subjects', :action => 'index'}) %><br />
+<%= link_to('Page Index', {:controller => 'pages', :action => 'index'}) %><br />
+<%= link_to('Section Index', {:controller => 'sections', :action => 'index'}) %><br />
+
