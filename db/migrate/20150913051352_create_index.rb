@@ -7,9 +7,9 @@ class CreateIndex < ActiveRecord::Migration
 
 
   def down
-  	remove_index("pages", "permalink")
-  	remove_index("pages", "subjects_id")
-  	remove_index("sections", "pages_id")
+  	#remove_index("pages", "permalink")
+  	#remove_index("pages", "subjects_id")
+  	#remove_index("sections", "pages_id")
   end
 
 end

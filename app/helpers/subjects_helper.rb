@@ -1,5 +1,4 @@
 module SubjectsHelper
 
 
-
 end
